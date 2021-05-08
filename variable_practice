@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Author: Reshma Shriyan
+# Date Created: 05/07/2021
+# Date Modified: 05/07/2021
+
+# Description: Practicing usage of variable
+
+# Usage:
+# variable_practice
+
+student="Sarah"
+echo "Hello ${student}"
+exit 0

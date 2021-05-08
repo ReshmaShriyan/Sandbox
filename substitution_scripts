@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Author: Reshma Shriyan
+# Date Created: 05/07/2021
+# Date Modified: 05/07/2021
+
+# Description: Command substitution
+
+# Usage:
+# substitution_scripts
+
+time=$(date +%H:%m:%S)
+echo "Hello $USER, time right now is $time"
+exit 0
+

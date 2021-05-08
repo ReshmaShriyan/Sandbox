@@ -2,15 +2,25 @@
 
 # Author: Reshma Shriyan
 # Date Created: 05/06/2021
-# Date Modified: 05/06/2021
+# Date Modified: 05/07/2021
 
 # Description: This script will backup all the files in home directory and save them all in a .tar archive
 
 # Usage:
 # backup_script
 
-tar -cvf ~/bash_course/my_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar ~/* 2 > /dev/null
+echo "Hello ${USER^}, I will now backup your home directory ${HOME}"
+
+currentdir=$(pwd)
+
+echo "You are running the script from your current directory ${currentdir}."
+echo "Therefore, I will save your backup in your ${currentdir}"
+
+tar -cf ${currentdir}/my_backup_"$(date +%d-%m-%Y_%H-%M-%S)".tar $HOME/* 2>/dev/null
+
+echo "Backup completed successfully"
 
 exit 0
+
 
 # End of script
