@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Author: Reshma Shriyan
+# Date Created: 05/07/2021
+# Date Modified: 05/07/2021
+
+# Description: For calculations
+
+# Usage:
+# arithmatic_script
+
+
+x=5
+y=8
+echo $((x+y))
+echo $((x-y))
+echo $((x/y))
+echo $((x*y))
+
+#Square or x raised to the power 2
+echo $((x**2))
+
+#Calcuate remainder
+echo $((x%5))
+echo $((x%y))
