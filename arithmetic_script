@@ -23,3 +23,10 @@ echo $((x**2))
 #Calcuate remainder
 echo $((x%5))
 echo $((x%y))
+
+#It will throw error for echo $((2.5+1) -- Arithemetic expansions  doesnt take decimal 
+#Output for echo $$(5/2) will  be 2, as it  doesnt provide decimal output either
+
+#bc command which stands for basic calculator can be used to work with decimal number in bash
+
+
