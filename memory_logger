@@ -1,0 +1,12 @@
+#! /bin/bash
+# Author: Reshma Shriyan
+# DAte created : 05/19/2021
+
+if [ -e $HOME/performance ]; then
+echo "Performance directory exist"
+else
+mkdir $HOME/performance
+fi
+
+free >> $HOME/performance/memory.log
+

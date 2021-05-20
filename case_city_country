@@ -1,0 +1,26 @@
+#! /bin/bash
+ 
+# Author: Reshma Shriyan
+# Date created: 2021/05/20
+# Date Modified:  
+ 
+# Description: 
+# Usage: 
+
+PS3="Please select a city you would like to visit: "
+
+select city in Tokyo London "Los Angeles" Moscow Dubai Manchester "New York";
+do
+
+case "$city" in 
+	 Tokyo) country="Japan";;
+	 London|Manchester) country="UK";;
+	"Los Angeles"|"New York") country="USA";;
+	 Moscow) country="Russia";;
+	 Dubai) country="UAE";;
+ 	 *) echo "$city is not in database";;
+esac
+
+echo "$city is in $country"
+break
+done

@@ -1,0 +1,26 @@
+
+#! /bin/bash
+
+# Author: Reshma Shriyan
+# Date Created: 05/20/2021
+# Date Modified: 05/20/2021
+# Description: Use this script to create a script file without having to write shebang, author name and date all over again
+
+# Usage: ./cbash
+
+read -p "Enter script file name you wish to create: " file_name 
+echo "#! /bin/bash" > $file_name
+echo " " >> $file_name
+
+# Author can be changed depending on who is using it, can also use $USER if intended for large scale users
+echo "# Author: Reshma Shriyan" >> $file_name
+
+echo "# Date created: $(date '+%Y/%m/%d')" >> $file_name
+echo "# Date Modified:  " >> $file_name
+echo " " >> $file_name
+echo "# Description: " >> $file_name
+echo "# Usage: ./$file_name " >> $file_name
+
+chmod 755 $file_name
+
+nano $file_name

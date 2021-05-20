@@ -1,0 +1,14 @@
+
+#! /bin/bash
+
+# Author: Reshma Shriyan
+# Date Created: 05/20/2021
+# Date Modified: 05/20/2021
+# Description: Use this script to create a script file without having to write shebang, author name and date all over again
+
+echo "#! /bin/bash" > shebang
+echo " " >> shebang
+echo "Author: Reshma Shriyan" >> shebang
+echo "Date created: $(date '+%Y-%m-%d')" >> shebang
+echo " "
+echo "Description: " >> shebang
