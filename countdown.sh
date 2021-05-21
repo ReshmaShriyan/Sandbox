@@ -17,15 +17,16 @@ esac
 
 done
 
-while [ $TotalSeconds -gt -1 ]; do
+while [ $TotalSeconds -gt 0 ]; do
 
 echo "$TotalSeconds"
 
-sleep 1s
-
 TotalSeconds=$(( $TotalSeconds - 1 ))
+
+sleep 1s
 
 done
 
+echo "Time's up!!"
 
 
