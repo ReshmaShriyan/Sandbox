@@ -1,0 +1,19 @@
+
+#! /bin/bash
+ 
+# Author: Reshma Shriyan
+# Date created: 2021/05/24
+# Date Modified:  
+ 
+# Description: 
+# Usage: ./forloopAssign 
+
+readarray -t urls < urls.txt
+
+for url in "${urls[@]}";do
+		webname=$(echo $url | cut -d "." -f 2)
+		curl --head "$url" > "$webname".txt
+#		testname=$(curl --head "$url")
+#		echo "$testname"
+done
+
